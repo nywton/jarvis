@@ -13,7 +13,7 @@ $ git clone https://github.com/nywton/jarvis.git
 $ cd jarvis
 $ chmod +x find_shell.sh
 ```
-You also need to export your OpenAI API key:
+You also need to export your [OpenAI API key](https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key):
 
 ```bash
 # put in the .bashrc or .zshrc
