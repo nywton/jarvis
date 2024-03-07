@@ -2,6 +2,8 @@
 
 This is a terminal assistant for remembering shell commands. It utilizes the OpenAI API to provide concise commands based on user input.
 
+![Peek 2024-03-07 20-47](https://github.com/nywton/jarvis/assets/6857918/e097c884-3835-4564-9427-67b69e2f53e3)
+
 ## Configuration
 
 First, you need to give execution permission to the script:
