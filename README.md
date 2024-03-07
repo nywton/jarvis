@@ -9,6 +9,8 @@ This is a terminal assistant for remembering shell commands. It utilizes the Ope
 First, you need to give execution permission to the script:
 
 ```bash
+$ git clone https://github.com/nywton/jarvis.git
+$ cd jarvis
 $ chmod +x find_shell.sh
 ```
 You also need to export your OpenAI API key:
@@ -21,7 +23,7 @@ export OPENAI_API_KEY=your_openai_api_key_here
 [optional] To use this script efficiently, you can set up an alias in your .bashrc file:
 
 ```bash
-alias ia=/full/path/of/script
+alias ia=/home/user/jarvis/find_shell.sh
 ```
 ## Usage
 You can use the script like this:
