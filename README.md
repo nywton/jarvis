@@ -7,7 +7,7 @@ This is a terminal assistant for remembering shell commands. It utilizes the Ope
 
 ## Install
 
-First, you need to give execution permission to the script:
+Unix/Based:
 
 ```bash
 # clone the repo to .config files
