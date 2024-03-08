@@ -23,7 +23,7 @@ export OPENAI_API_KEY=your_openai_api_key_here
 [optional] To use this script efficiently, you can set up an alias in your .bashrc file:
 
 ```bash
-alias ia=/home/user/jarvis/find_shell.sh
+alias jarvis=/home/user/jarvis/find_shell.sh
 ```
 ## Usage
 You can use the script like this:
