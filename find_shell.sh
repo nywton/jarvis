@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This is a terminal assistent for remember shell commands
+# This is a terminal assistant for remembering shell commands
 # #### Usage
 # First you need to give execution permission:
 # ```
@@ -10,7 +10,7 @@
 # Produces: git log -p
 #
 # #### Configure
-# You add a alias to the file in .bashrc
+# You add an alias to the file in .bashrc
 # alias ia=/full/path/of/script
 # You also need to export the $OPENAI_API_KEY
 
@@ -21,7 +21,6 @@ fi
 
 user_command="$1"
 
-# Execute curl command and store the response in a variable
 response=$(curl -sS https://api.openai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer $OPENAI_API_KEY" \
@@ -39,8 +38,22 @@ response=$(curl -sS https://api.openai.com/v1/chat/completions \
     ]
   }')
 
-choices_index=$(echo "$response" | grep -o '"choices":\[[0-9]*\]' | cut -d "[" -f2 | cut -d "]" -f1)
-
 output=$(echo "$response" | grep -o "\"content\": \"[^\"]*" | cut -d "\"" -f4)
 
-echo "$output"
+echo "$ $output"
+
+read -p "execute command? (y/n): " choice
+
+case "$choice" in 
+  y|Y ) 
+    echo "Executing command: $output"
+    eval "$output"
+    ;;
+  n|N ) 
+    echo "Exiting without executing the command."
+    ;;
+  * ) 
+    echo "Invalid choice, exiting without executing the command."
+    ;;
+esac
+
