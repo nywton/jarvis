@@ -1,4 +1,4 @@
-# Jarvis - A Terminal Assistant for Shell Commands
+# Jarvis - A Terminal Assistant for concise Shell Commands
 
 This is a terminal assistant for remembering shell commands. It utilizes the OpenAI API to provide concise commands based on user input.
 
