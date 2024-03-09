@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This is a terminal assistant for remembering shell commands
 # #### Usage
