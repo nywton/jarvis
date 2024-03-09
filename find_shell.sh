@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 # This is a terminal assistant for remembering shell commands
 # #### Usage
 # First you need to give execution permission:
