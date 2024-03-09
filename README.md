@@ -14,7 +14,7 @@ Unix/Based:
 $ git clone https://github.com/nywton/jarvis.git ~/.config/jarvis
 
 # give execution permission to the script
-$ chmod +x ~/.config/jarvis/find_shell.sh
+$ chmod u+x ~/.config/jarvis/find_shell.sh
 
 # add a alias to to execute script
 $ echo 'alias jarvis=~/.config/jarvis/find_shell.sh' >> ~/.bashrc # or ~/.zshrc for zsh
