@@ -14,10 +14,10 @@ Unix/Based:
 $ git clone https://github.com/nywton/jarvis.git ~/.config/jarvis
 
 # give execution permission to the script
-$ chmod u+x ~/.config/jarvis/find_shell.sh
+$ chmod u+x ~/.config/jarvis/jarvis.sh
 
 # add a alias to to execute script
-$ echo 'alias jarvis=~/.config/jarvis/find_shell.sh' >> ~/.bashrc # or ~/.zshrc for zsh
+$ echo 'alias jarvis=~/.config/jarvis/jarvis.sh' >> ~/.bashrc # or ~/.zshrc for zsh
 
 # reload the session
 $ source ~/.bashrc # or source ~/.zshrc for zsh
@@ -32,7 +32,7 @@ $ echo 'export OPENAI_API_KEY=your_openai_api_key_here' >> ~/.bashrc # or ~/.zsh
 [optional] To use this script efficiently, you can set up an alias in your .bashrc file:
 
 ```bash
-alias jarvis=/home/user/jarvis/find_shell.sh
+alias jarvis=/home/user/jarvis/jarvis.sh
 ```
 ## Usage
 You can use the script like this:
